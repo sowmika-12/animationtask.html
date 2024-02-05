@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animation</title>
+        <style>
+            /* task1 style */
+            h1{
+                text-align:center;
+                color:blueviolet;
+                font-size:38px;
+    
+            }
+            .task1{
+                border:3px solid black;
+                background-color:bisque;
+                margin-left:50px;
+                margin-right:50px;
+            }
+            .task1 img{
+                height:200px;
+                width:200px;
+                margin-left:20px;
+                border:1px solid black;
+            }
+            .music{
+                position:relative;
+                display:block;
+            }
+    
+            @keyframes b{
+                0%{ height:0px;}
+                25%{ height:30px;}
+                50%{height:40px;}
+                75%{height:50px;}
+                100%{height:60px;}
+                
+            }
+             .b{
+                display:inline-block;
+                background-color:black;
+                height:50px;
+                width:8px;
+                animation-name: b;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-direction:alternate;
+                 }
+                  .c{
+                display:inline-block;
+                background-color:black;
+                height:50px;
+                width:8px;
+                color:black;
+                animation-name: b;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-direction:reverse;
+                 }
+               .d{
+                display:inline-block;
+                background-color:black;
+                height:50px;
+                width:8px;
+                color:black;
+                animation-name: b;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-direction:normal;
+               }
+              /* style for task2 */
+    
+            .task2{
+                border:3px solid black;
+                background-color:beige;
+                margin-left:100px;
+                margin-right:100px;
+              }
+              .task2 span{
+                font-size: 40px;
+                text-align: center;
+                font-style: italic;
+                color:blue;
+                font-weight: bold;
+                animation-name: name;
+                animation-duration:3s;
+                opacity:0;
+                display:inline-block;
+                animation-fill-mode:forwards ;
+    
+    
+              }
+              @keyframes name {
+                0%{
+                    opacity: 0;
+                    transform:translatey(-30px);
+    
+                }
+                100%{
+                    opacity: 1;
+                    transform:translate(-20px)}
+                  }
+                  .one{
+                    animation-delay:0.5s;
+                  }
+                  .two{
+                    animation-delay:1.5s;
+                  }
+    
+                  .three{
+                    animation-delay:2.5s;
+                  }
+    
+                  .four{
+                    animation-delay:3.5s;
+                  }
+    
+                  .five{
+                    animation-delay:4.5s;
+                  }
+    
+                  .six{
+                    animation-delay:5.5s;
+                  }
+                  .seven{
+                    animation-delay:6.5s;
+                  }
+    
+    
+    
+              
+              
+            
+              /* task3 style */
+              .task3{
+                border:3px solid black;
+                margin-left:100px;
+                margin-right:100px;
+    
+            }
+            .task3 img{
+               margin-left:0px;
+               margin-top:0px;
+               height:30px;
+               width:30px;
+               border:2px solid black; 
+               transition:all 4s linear 1s;
+    
+            }
+            .task3 img:hover{
+                height:100px;
+                width:100px;
+                border:none;
+                padding:50px;
+                
+    
+            }
+          
+           
+            .task4{
+                border:3px solid black;
+                background-color: antiquewhite;
+                
+            }
+            .task4 button{
+                background-color:blueviolet;
+                color:black;
+                border-radius:20px;
+                font-size: 20px;
+                
+            }
+         h4{
+                visibility: hidden;
+                
+                
+                
+            }
+             button:hover+h4{
+                visibility:visible;
+                background-color:aqua; 
+                margin-right:750px;
+                border-radius:20px;
+                padding:10px;
+            }
+            h3{
+                visibility: hidden;
+            }
+            button:hover+h3{
+                visibility:visible;
+                background-color:aqua; 
+                margin-right:550px;
+                border-radius:20px;
+                padding:10px;
+            
+            }
+            h5{
+                visibility: hidden;
+            }
+            button:hover+h5{
+                visibility:visible;
+                background-color:aqua; 
+                margin-right:250px;
+                border-radius:20px;
+                padding:10px;
+                
+            }
+            
+            h2{
+                visibility: hidden;
+            }
+            button:hover+h2{
+                visibility:visible;
+                background-color:aqua; 
+                margin-right:0px;
+                border-radius:20px;
+                padding:10px;
+                
+            }
+                
+        </style>
+    </head>
+    <body>
+       
+           
+           
+          
+       
+        <!-- task2 name -->
+        <div class="task2">
+            <h1>Name TASK</h1>
+            <center>
+            <span class="one">M</span>
+            <span class="two">a</span>
+            <span class="three">l</span>
+            <span class="four">a</span>
+            <span class="five">t</span>
+            <span class="six">h</span>
+             <span class="seven">i</span>
+            </center>
+        </div>
+        <br><br>
+        <div class="task3">
+            <h1>Image Task</h1>
+     <center>
+            <img src="./Spring-Desktop-Wallpaper-HD.jpg"><br>
+            hover the image
+        </center>
+        
+        </div>
+        <br><br>
+        <div class="task4">
+            <h1>Backgroundcolor task</h1>
+        <center>
+            
+            <button class="first">25%</button>
+             <h4>loading 25%..</h4>
+              
+            <button class="sec">50%</button>
+            <h3>loading 50%..</h3>
+            <button class="thi">75%</button>
+            <h5>loading 75%..</h5>
+            <button class="four">100%</button>
+            <h2>loading 100%..</h2>
+       
+        </center>
+    
+        </div>
+        <div class="task1">
+            <h1>Music Box</h1>
+            <center>
+            <img src="https://www.zoomnews.in/uploads_2019/newses/salaar_91883891_sm.jpg">
+        <br><br>
+            <audio controls>
+             <source src ="https://mp3teluguwap.net/mp3/2023/Salaar/Sound%20of%20Salaar.mp3">
+            </audio>
+          </center>
+          <br><br>
+          <center>
+            <div class="music">
+                <h6 class="b"></h6>
+                <h5 class="c"></h5>
+                 
+                <h6 class="d"></h6>
+                 
+                <h5 class="b"></h5>
+                <h6 class="c"></h6>
+                 
+                <h5 class="d"></h5>
+                <h6 class="b"></h6>
+             
+                <h5 class="c"></h5>
+                <h6 class="d"></h6>
+                 
+                <h5 class="b"></h5>
+                <h6 class="c"></h6>
+                 
+                <h5 class="d"></h5>
+                <h6 class="b"></h6>
+                 
+                <h5 class="c"></h5>
+                <h6 class="d"></h6>
+                 
+                <h5 class="b"></h5>
+                <h6 class="c"></h6>
+             
+                <h5 class="d"></h5>
+                </div>
+            </center>
+    
+        </div>
+        <br><br>
+    </body>
+    </html>
+    </html>
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
